@@ -23,6 +23,9 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+src/bin/
+src/include
+src/pip-selfcheck.json
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
