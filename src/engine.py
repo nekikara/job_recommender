@@ -2,17 +2,13 @@
 
 from scipy.stats import pearsonr
 import numpy as np
+import pandas as pd
 
 def companies():
-    return np.array([
-                [ 1, 2, 2, 1, 1],
-                [ 2, 2, 2, 5, 2],
-                [ 3, 2, 3, 5, 27],
-                [ 4, 3, 4, 5, 27],
-                [ 5, 2, 3, 2, 20]])
+    return pd.read_csv('company.csv', header=None).as_matrix()
 
 def user():
-    return np.array([1, 2, 2, 1, 1])
+    return pd.read_csv('user.csv', header=None).as_matrix().flatten()
 
 def main():
     matching = []
